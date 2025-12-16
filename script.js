@@ -80,12 +80,12 @@ function calculateGrade(subject, studentAnswers) {
     // Calcular puntuación: +1 por correcta, -0.33 por incorrecta, 0 por blanco
     const score = correct - (incorrect * 0.33);
     
-    // Regla de 3: Si 30 = 10, entonces X = (correct * 10) / 30
-    const notaSobre10 = (correct * 10) / 30;
+    // Regla de 3: Si 30 = 10, entonces X = (score * 10) / 30
+    const notaSobre10 = (score * 10) / 30;
     
     return {
         score: Math.max(0, score).toFixed(2), // No puede ser negativa
-        notaSobre10: notaSobre10.toFixed(2),
+        notaSobre10: Math.max(0, notaSobre10).toFixed(2), // Tampoco puede ser negativa
         correct,
         incorrect,
         blank,
