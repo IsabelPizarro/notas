@@ -137,14 +137,15 @@ textarea:focus {
     margin-right: auto;
 }
 
-.visitor-counter img {
-    height: 28px;
-    border-radius: 5px;
+.counter-icon {
+    margin-right: 8px;
+    font-size: 1.2rem;
 }
 
-.visitor-counter p {
-    color: white;
+.counter-label {
+    opacity: 0.8;
     font-size: 0.9rem;
+    color: white;
 }
 
 .result-card {
