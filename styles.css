@@ -138,8 +138,13 @@ textarea:focus {
 }
 
 .visitor-counter img {
-    height: 20px;
-    border-radius: 3px;
+    height: 28px;
+    border-radius: 5px;
+}
+
+.visitor-counter p {
+    color: white;
+    font-size: 0.9rem;
 }
 
 .result-card {
