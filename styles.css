@@ -123,6 +123,36 @@ textarea:focus {
     display: none;
 }
 
+.visitor-counter {
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 30px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.counter-icon {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+#visitorCount {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 0 5px;
+    color: #fff;
+}
+
+.counter-label {
+    opacity: 0.9;
+}
+
 .result-card {
     background: white;
     border-radius: 15px;

@@ -171,3 +171,14 @@ document.getElementById('subject').addEventListener('change', () => {
 document.getElementById('studentAnswers').addEventListener('input', () => {
     document.getElementById('results').classList.add('hidden');
 });
+
+// Contador de visitas con CountAPI
+fetch('https://api.countapi.xyz/hit/test-grader-app/visits')
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById('visitorCount').textContent = data.value;
+    })
+    .catch(error => {
+        document.getElementById('visitorCount').textContent = '---';
+        console.error('Error al cargar el contador:', error);
+    });
