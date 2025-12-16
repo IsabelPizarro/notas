@@ -172,11 +172,11 @@ document.getElementById('studentAnswers').addEventListener('input', () => {
     document.getElementById('results').classList.add('hidden');
 });
 
-// Contador de visitas con CountAPI
-fetch('https://api.countapi.xyz/hit/test-grader-app/visits')
+// Contador de visitas con Hits.sh
+fetch('https://hits.sh/isabelpizarro.github.io/notas.json')
     .then(response => response.json())
     .then(data => {
-        document.getElementById('visitorCount').textContent = data.value;
+        document.getElementById('visitorCount').textContent = data.hits || '---';
     })
     .catch(error => {
         document.getElementById('visitorCount').textContent = '---';
